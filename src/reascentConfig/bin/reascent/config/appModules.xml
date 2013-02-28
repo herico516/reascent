@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rs:appModules xmlns:rs="http://www.reascent.org/appModules"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.reascent.org/appModules  appModules.xsd">
+
+	<rs:module>
+		<rs:name>ApplicationBaseService</rs:name>
+
+		<rs:initClassName>com.reascent.framework.app.modules.ApplicationBaseService</rs:initClassName>
+		
+        <!-- The application code of reascent family -->
+		<rs:property key="appCode" value="reascent" />
+		
+		<!--Menu style
+		           select  value:left_accordion,left_tree,top
+		           default value:left_accordion
+		  -->
+		<rs:property key="menuType" value="left_accordion" />
+		
+		<!-- multiple document window mode:  
+		           default : false -->
+		<rs:property key="isMDI" value="true" />
+		
+	</rs:module>
+
+
+
+</rs:appModules>

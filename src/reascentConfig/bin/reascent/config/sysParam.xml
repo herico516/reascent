@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysParameters>
+	<parameter>
+		<name>sessionTimeOut</name>
+		<value>10</value>
+	</parameter>
+	<parameter>
+		<name>sessionScanTime</name>
+		<value>10</value>
+	</parameter>
+	<parameter>
+		<name>sessionExpriedRemerber</name>
+		<value>10</value>
+	</parameter>
+</sysParameters>

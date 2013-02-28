@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="reascentWeb"
+  id="myeclipse.1306244011510"
+  context-root="/reascent"
+  j2ee-spec="5.0"
+  archive="reascentWeb.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean" >
+		<property name="jndiName">
+			<value>java:comp/env/jdbc/reas</value>
+		</property>
+	</bean>
+	
+	<bean id="person" class="com.reascent.framework.service.bean.Person">
+		<property name="name" value="zhangsan"></property>
+		<property name="address" value="HuNan shaoyang"></property>
+		<property name="age" value="25"></property>
+		<property name="ds" ref="dataSource"></property>
+	</bean>
+	
+
+     <!-- 
+       === TestDAO is the sub Class of the AbstractJDBCTemplateDAO or AbstractNamedParameterJdbcTemplateDAO
+       === use JDBCTemplate component of the spring
+     <bean id="testDAO" class="com.reascent.framework.dao.TestDAO" >
+		<property name="dataSource" ref="dataSource"/>
+	 </bean>
+     
+      -->
+      
+      
+      <!-- 
+         TestDAO is the sub Class of the  or AbstractNamedParameterJdbcTemplateDAO
+     <bean id="testDAO2" class="com.reascent.framework.dao.TestDAO" >
+		<property name="dataSource" ref="dataSource"/>
+		<property name="schema" value="reas"/>
+		<property name="needCache" value="false"/>
+	 </bean>
+     
+      -->
+
+
+	
+
+
+
+
+</beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>reascent</name>
+	<comment></comment>
+	<projects>
+		<project>reascentCommon</project>
+		<project>reascentConfig</project>
+		<project>reascentDAO</project>
+		<project>reascentUtility</project>
+		<project>reascentWeb</project>
+		<project>TestProject</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.genuitec.eclipse.j2eedt.core.J2EEProjectValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.genuitec.eclipse.j2eedt.core.DeploymentDescriptorValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.genuitec.eclipse.ast.deploy.core.DeploymentBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.genuitec.eclipse.ast.deploy.core.deploymentnature</nature>
+		<nature>com.genuitec.eclipse.j2eedt.core.earnature</nature>
+	</natures>
+</projectDescription>

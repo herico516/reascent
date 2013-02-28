@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:rs="http://www.reascent.org/appModules" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.reascent.org/appModules">
+
+
+	<xs:element name="name" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>module name</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="initClassName" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>module initialize class name
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="propertyType">
+		<xs:annotation>
+			<xs:documentation>property complex type</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="key" type="xs:string"></xs:attribute>
+		<xs:attribute name="value" type="xs:string"></xs:attribute>
+	</xs:complexType>
+
+	<xs:element name="property" type="rs:propertyType">
+		<xs:annotation>
+			<xs:documentation>module property</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+
+	<xs:complexType name="moduleType">
+		<xs:annotation>
+			<xs:documentation>application module type
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rs:name" minOccurs="1" maxOccurs="1"></xs:element>
+			<xs:element ref="rs:initClassName" minOccurs="1" maxOccurs="1"></xs:element>
+			<xs:element ref="rs:property" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="module" type="rs:moduleType">
+		<xs:annotation>
+			<xs:documentation>application module</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:complexType name="appModulesType">
+		<xs:annotation>
+			<xs:documentation>application modules type
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rs:module" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="appModules" type="rs:appModulesType">
+		<xs:annotation>
+			<xs:documentation>application modules</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+
+</xs:schema>

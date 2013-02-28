@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/reascentConfig"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/reascentUtility"/>
+	<classpathentry kind="lib" path="/reascent/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/reascent/commons-digester-1.8.1.jar"/>
+	<classpathentry kind="lib" path="/reascent/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/reascent/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/reascent/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/reascent/freemarker-2.3.8.jar"/>
+	<classpathentry kind="lib" path="/reascent/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/reascent/ognl-2.6.11.jar"/>
+	<classpathentry kind="lib" path="/reascent/spring.jar" sourcepath="F:/JavaSource/Lib/Spring/2.5.5/spring-framework-2.5.5/dist/spring-sources.jar"/>
+	<classpathentry kind="lib" path="/reascent/struts2-core-2.0.14.jar" sourcepath="F:/JavaSource/Lib/Struts/2.0.14/struts-2.0.14-all.zip"/>
+	<classpathentry kind="lib" path="/reascent/xwork-2.0.7.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/reascentCommon"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
